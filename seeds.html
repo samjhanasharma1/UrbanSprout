@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>seeds.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<div class="navbar">
+        <a href="index.html">UrbanSprout𖠿</a>
+
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+        </div>
+    </div>
+
+<!--==== SEEDS SECTION ====== -->
+ <div>
+<div id="seedsSection" class="section">
+  
+    <button class="back-btn" onclick="window.location.href='products.html'">
+    ← Back
+</button>
+    <h2 class="seeds" style="text-align:center; margin-top: 10px;
+  margin-bottom: 10px; height:20px; color:green; ">Seeds</h2>
+     <h2 style="text-align:center; padding:5px; margin-top: 0; ">Vegetable Seeds</h2>
+
+    <div class="container">
+<div class="card">
+   <a href="products/cherrytomatoes.html">
+        <img src="https://www.marthastewart.com/thmb/c5wsi-bb099p-y5oe-XNKlnRZwU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/MS_cherrytomatoplant_GettyImages-1264114943-9fbeb2f77ba34c25828d2bc588ef2b9b.jpg">
+    
+
+    <h4>Cherry Tomato Seeds</h4>
+
+<!---descciption--->
+    <p class="desc">Perfect for balcony gardening. Easy to grow and fast harvest.</p>
+
+    <div class="price">Rs.185</div>
+    <div class="discount-text">10% OFF</div>
+    <div class="discounted">Rs.166.5</div>
+</a>
+    <!--  Quantity -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!--  Add to Cart with quantity -->
+    <button onclick="addToCart(
+        'Cherry Tomato Seeds',
+        166.5,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+     
+
+    
+   
+
+</div>
+        
+<div class="card">
+
+    
+    <a href="products/cilantro.html">
+        <img src="https://cdn.plantssparkjoy.com/wp-content/uploads/2023/02/26222354/growing-cilantro-gardening-tips.jpeg">
+
+        <h4>Cilantro</h4>
+
+        <p class="desc">
+            Fresh herb perfect for cooking. Easy to grow in small pots.
+        </p>
+
+        <div class="price">Rs.200</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.180</div>
+    </a>
+
+    <!-- Quantity -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- Add to Cart -->
+    <button onclick="addToCart(
+        'Cilantro',
+        180,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+
+    
+    <a href="products/lettuce.html">
+        <img src="https://cdn.mos.cms.futurecdn.net/U7sU9gYWyGrznD3V6m6A66-1024-80.jpg.webp">
+
+        <h4>Lettuce</h4>
+
+        <p class="desc">
+            Fresh leafy greens perfect for salads. Fast-growing and ideal for home gardening.
+        </p>
+
+        <div class="price">Rs.220</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.198</div>
+    </a>
+
+    <!-- Quantity -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- Add to Cart -->
+    <button onclick="addToCart(
+        'Lettuce',
+        198,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    <div class="card">
+
+    <!-- Clickable area -->
+    <a href="products/spinach.html">
+        <img src="https://www.marthastewart.com/thmb/IIKmHtKZw40-yySrljvQP-WF7Pw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1154983188-5bf74d10df794a3aae277cf0a1648650.jpg">
+
+        <h4>Spinach Seeds</h4>
+    </a>
+        <p class="desc">
+            Nutritious leafy vegetable rich in iron. Perfect for healthy home gardening.
+        </p>
+
+        <div class="price">Rs.250</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.225</div>
+
+
+    <!-- Quantity -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- Add to Cart -->
+    <button onclick="addToCart(
+        'Spinach Seeds',
+        225,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+    <a href="products/arugula.html">
+
+        <img src="https://keengarden.com/wp-content/uploads/2026/02/When-to-Harvest-Arugula.webp">
+
+        <h4>Arugula Seeds</h4>
+
+        <p class="desc">
+            Fresh peppery leafy green perfect for salads and home gardening.
+        </p>
+
+        <div class="price">Rs.280</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.252</div>
+
+    </a>
+
+    <!-- Quantity -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- Add to Cart -->
+    <button onclick="addToCart(
+        'Arugula Seeds',
+        252,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+</div>
+         
+       <div class="card">
+
+    <!-- CLICKABLE PRODUCT PAGE -->
+    <a href="products/carrot.html">
+
+        <img src="https://i.pinimg.com/236x/37/6a/8b/376a8bdd879c74e7510e376db592884b.jpg" alt="Carrot seeds">
+
+        <h4>Carrot Seeds</h4>
+
+        <p class="desc">
+            Sweet and crunchy root vegetable perfect for home gardening.
+        </p>
+
+        <div class="price">Rs.190</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.171</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Carrot Seeds',
+        171,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+
+<div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/cabbage.html">
+
+        <img src="https://www.groworganic.com/cdn/shop/articles/Cabbage3.png?v=1766094359" alt="Cabbage Seeds">
+
+        <h4>Cabbage Seeds</h4>
+
+        <p class="desc">
+            Healthy leafy vegetable perfect for soups, salads, and home gardening.
+        </p>
+
+        <div class="price">Rs.210</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.189</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Cabbage Seeds',
+        189,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+     
+<div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/raddish.html">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScSziLJxArBt5h5F30Y8BxfEWn_UFn3tpqwA&s" alt="Radish Seeds">
+
+        <h4>Radish Seeds</h4>
+
+        <p class="desc">
+            Fast-growing root vegetable perfect for salads and home gardening.
+        </p>
+
+        <div class="price">Rs.170</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.153</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Radish Seeds',
+        153,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    </div>
+
+    <!-- Fruit Seeds -->
+    <h2   style="text-align:center; padding:5px; margin-top: 0; ">Fruit Seeds </h2>
+    <div class="container" >
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/strawberry.html">
+
+        <img src="https://www.theenglishgarden.co.uk/_gatsby/file/64e0c2fd61c345563c17119cf7fcd7c2/22840_shutterstock_56673922.jpg">
+
+        <h4>Strawberry Seeds</h4>
+
+        <p class="desc">
+            Sweet and juicy fruit perfect for home gardens and small spaces.
+        </p>
+
+        <div class="price">Rs.200</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.180</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Strawberry Seeds',
+        180,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+       <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+   <a href="products/grape.html">
+
+        <img src="https://img.drz.lazcdn.com/static/bd/p/14f540332390500bbf847fad76e533d4.jpg_720x720q80.jpg">
+
+        <h4>Grape Seeds</h4>
+
+        <p class="desc">
+            Sweet fruit seeds perfect for home gardening and healthy snacks.
+        </p>
+
+        <div class="price">Rs.220</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.198</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Grape Seeds',
+        198,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/apple.html">
+
+        <img src="https://gardenerspath.com/wp-content/uploads/2024/05/Apples-Spilling-from-a-Wicker-Basket.jpg" alt="Apple Seeds">
+
+        <h4>Apple Seeds</h4>
+
+        <p class="desc">
+            Sweet fruit seeds ideal for home gardening and healthy lifestyle.
+        </p>
+
+        <div class="price">Rs.240</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.216</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Apple Seeds',
+        216,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+   <div class="card">
+
+    
+    <a href="products/kiwi.html">
+
+        <img src="https://media.istockphoto.com/id/636969172/photo/kiwi-fruit.jpg?s=612x612&w=0&k=20&c=BKuMYHPuRBaIc6c4azgj-NqC2Is3Q0Vir-afZfxefXk=" alt="Kiwi Seeds">
+
+        <h4>Kiwi Seeds</h4>
+
+
+        <div class="price">Rs.260</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.234</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Kiwi Seeds',
+        234,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+    <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/cherry.html">
+
+        <img src="https://m.media-amazon.com/images/I/81jNg4jYlHL.jpg">
+
+        <h4>Cherry Seeds</h4>
+
+        <p class="desc">
+            Sweet and colorful fruit seeds perfect for healthy home gardening.
+        </p>
+
+        <div class="price">Rs.300</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.270</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Cherry Seeds',
+        270,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/blueberry.html">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpv81CIaG8IoYGCTlgBHaxc8raxpsg3QR_tg&s" alt="Blueberry Seeds">
+
+        <h4>Blueberry Seeds</h4>
+
+       
+
+        <div class="price">Rs.280</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.252</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Blueberry Seeds',
+        252,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+   <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/mango.html">
+
+        <img src="https://i.pinimg.com/236x/dc/d6/9a/dcd69a5cbf823702b8fe4ce7d9206b45.jpg" alt="Mango Seeds">
+
+        <h4>Mango Seeds</h4>
+
+        <p class="desc">
+            Tropical fruit seeds perfect for home gardens and healthy living.
+        </p>
+
+        <div class="price">Rs.320</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.288</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Mango Seeds',
+        288,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+<div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/papaya.html">
+
+        <img src="https://media.istockphoto.com/id/483485722/photo/papaya-tree-with-a-large-crop-of-papayas.jpg?s=612x612&w=0&k=20&c=IEl8h40CDDih-0B99KP40VBxsg9aOCtnq_-IQoLIj4Y=" alt="Papaya Seeds">
+
+        <h4>Papaya Seeds</h4>
+
+        <p class="desc">
+            Tropical fruit seeds perfect for healthy home gardening and fresh harvests.
+        </p>
+
+        <div class="price">Rs.210</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.189</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Papaya Seeds',
+        189,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    </div>
+    </div>
+    <div class="footer" >
+        <h3>Urban Sprout </h3>
+        <p>Grow fresh, green living in every urban space</p>
+        <p>© 2026 Urban Sprout | All Rights Reserved</p>
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>

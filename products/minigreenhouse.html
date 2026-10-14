@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Greenhouse - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+<a href="../tools.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://monstershop.co.uk/cdn/shop/files/27057_mini_greenhouse_plastic_cover_001_3cf6e7ac-bef9-47ac-8ea3-3d9377ba392c.jpg?v=1742506305&width=1517">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Mini Greenhouse</h2>
+
+            <div class="rating">★★★★★ (89)</div>
+
+            <div>
+                <span class="price">Rs.3600</span>
+                <span class="old-price">Rs.4000</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Mini Greenhouse helps protect plants from harsh weather and supports healthy plant growth.
+            </p>
+
+            <p class="desc">
+                It is perfect for growing seedlings, vegetables, and flowers in small outdoor or balcony spaces.
+            </p>
+
+            <p class="desc">
+                Usage Tips:
+                <br>• Place in an area with sunlight
+                <br>• Keep proper ventilation inside
+                <br>• Water plants regularly
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Mini Greenhouse',
+                3600,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

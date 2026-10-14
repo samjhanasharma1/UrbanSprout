@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    
+} 
+
+body{
+    background:#e8f5e9;
+}
+
+.feedback{
+    background: transparent;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    color:black;
+    background:white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+ 
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#e8f5e9,#e8f5e9);
+color:rgb(29, 26, 26);
+text-align:center;
+padding:50px 20px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+/* SECTIONS */
+
+section{
+max-width:900px;
+margin:40px auto;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+h2{
+color:#2e7d32;
+}
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+/* Selected star */
+.stars input:checked + label,
+.stars input:checked + label ~ label {
+  color: gold;
+}
+
+
+/* TEAM SECTION */
+
+.team{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:50px;
+justify-items:center;
+}
+
+.card{
+background:#e8f5e9;
+padding:20px;
+border-radius:12px;
+width:300px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:200px;
+height:200px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+/* FORM */
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.form-box {
+    background: #dcedc8;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+input,textarea{
+width:100%;
+padding:10px;
+margin-top:8px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+textarea{
+resize:none;
+}
+
+.rating-options{
+display:flex;
+gap:15px;
+margin-top:8px;
+margin-bottom:15px;
+}
+
+button{
+background:#2e7d32;
+color:white;
+padding:12px;
+border:none;
+border-radius:8px;
+width:100%;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#1b5e20;
+}
+/*view button*/
+.view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #1b5e20;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+background:#2e7d32;
+color:white;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+  
+    <div class="navbar">
+        <a href="index.html">UrbanSprout𖠿</a>
+
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+            
+        </div>
+    </div>
+
+<!-- HEADER -->
+<body>
+<header>
+<h1>About Us</h1>
+<p>
+UrbanSprout is a team of four members dedicated to promoting urban gardening
+and sustainable living. We help people grow plants in small spaces like
+balconies, rooftops, and homes.
+</p>
+</header>
+
+
+<!-- MISSION -->
+
+<section>
+<h2>Our Goal</h2>
+<ul>
+<p>
+<li>To encourage people to make  greener cities and help people confidently grow and care for plants by providing simple,practical and easy-to-follow advice for all experiences levels.</li>
+<li>To create a supportive community where plant lovers can connect, share their experiences, and learn from each other’s successes and challenges.</li>
+<li>To promote friendly practices that care for both plants and the planet, while helping people build a stronger connection with nature.</li>
+</p>
+
+</section>
+
+<!-- TEAM -->
+
+<section>
+
+<h2>Our Team</h2>
+
+<div class="team">
+
+<div class="card">
+<img src="About/member1.jpg">
+<p><b>Samjhana Sharma</b></p>
+<a href="About/member1.html" class="view-btn">View Profile</a>
+</div>
+
+
+<div class="card">
+<img src="About/member2.jpg">
+<p><b>Paru Thapa Magar</b></p>
+<a href="About/member2.html" class="view-btn">View Profile</a>
+</div>
+
+<div class="card">
+<img src="About/member3.jpg">
+<p><b>Roshani Bastola</b></p>
+<a href="About/member3.html" class="view-btn">View Profile</a>
+</div>
+
+<div class="card">
+<img src="About/member4.jpg">
+<p><b>Seenom Tulachan</b></p>
+<a href="About/member4.html" class="view-btn">View Profile</a>
+</div>
+
+</div>
+
+
+<section class="feedback">
+
+<h2>Feedback Form</h2>
+
+<form id="myForm" class="form-box" onsubmit="return validateForm(event)">
+  <!-- Name -->
+<div class="form-group">
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+</div>
+
+<!-- Email -->
+<div class="form-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter your email">
+</div>
+
+<!-- Rating -->
+<div class="form-group">
+<label>Rate Our Service:</label>
+
+<div class="stars">
+  <input type="radio" id="star5" name="rating" value="5">
+  <label for="star5">★</label>
+
+  <input type="radio" id="star4" name="rating" value="4">
+  <label for="star4">★</label>
+
+  <input type="radio" id="star3" name="rating" value="3">
+  <label for="star3">★</label>
+
+  <input type="radio" id="star2" name="rating" value="2">
+  <label for="star2">★</label>
+
+  <input type="radio" id="star1" name="rating" value="1">
+  <label for="star1">★</label>
+</div>
+
+</div>
+
+<!-- Feedback -->
+<div class="form-group">
+<label>Your Feedback</label>
+<textarea id="feedback" rows="4" placeholder="Write your feedback..."></textarea>
+</div>
+
+<!-- Suggestions -->
+<div class="form-group">
+<label>Suggestions</label>
+<textarea id="suggestions" rows="3" placeholder="Any suggestions?"></textarea>
+</div>
+
+<button type="submit">Submit Feedback</button>
+
+<p id="error"></p>
+
+</form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<script>
+    function validateForm(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let feedback = document.getElementById("feedback").value;
+    let error = document.getElementById("error");
+
+    if (name.trim() === "" || feedback.trim() === "") {
+        error.innerHTML = "Please fill required fields!";
+        error.style.color = "red";
+        return false;
+    }
+
+    alert("Thank you for your feedback!");
+    error.style.color = "green";
+
+    // form clear
+        document.getElementById("myForm").reset();
+    return true;
+}
+</script>

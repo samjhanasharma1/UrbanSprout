@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color:black;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+ 
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("garden.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.hero-content button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #2e7d32;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background: #256628;
+}
+
+.product-hero {
+    height: 180px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-SO-GglGbcBSzNNMA-MGgaMDWOCg_kLzlQ&s");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.product-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+.product-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.shop-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #1B5E20;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.shop-btn:hover {
+    background: #35ab12;
+    transform: scale(1.05);
+}
+/* PAGES */
+.page{
+    display: none;
+   
+}
+.seeds {
+  height: auto;
+} 
+.page.active {
+    display: block;
+}
+
+.home-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d0d3d1;
+    border-radius: 40px;
+    padding: 50px;
+    margin: 40px;
+    gap: 40px;
+}
+
+/* TEXT SIDE */
+.home-desc .text {
+    flex: 1;
+}
+
+.home-desc h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.home-desc p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000a04;
+}
+
+/* IMAGE SIDE */
+.home-desc .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-desc img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+ }
+
+
+/* FOOTER */
+.footer {
+     background: #1B5E20;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+ /* CARDS */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 5px auto; 
+    padding: 20px;
+    background-color: #d1c8c8;
+
+}
+
+.card {
+    background:white;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(16, 4, 4, 0.1);
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+    width: 250px;
+    min-height: 450px;
+
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+  
+}
+.card:hover {
+    transform: translateY(-8px);
+     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.price {
+    font-size: 14px;
+    text-align: center;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.discounted {
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* html tag selector */
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #1B5E20;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(3, 52, 3);
+}
+
+/* CART */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+   
+
+}
+.card h4 {
+    text-align: center;
+    margin: 10px 0;
+}
+.cart-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+
+/* ALL 3 CARDS (grouping IDs) */
+#cat1, #cat2, #cat3 {
+    position: relative;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* IMAGES */
+#cat1 img, #cat2 img, #cat3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DARK OVERLAY */
+#cat1::after, #cat2::after, #cat3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* TEXT */
+#cat1 h3, #cat2 h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    
+}
+
+/* HOVER */
+#cat1:hover, #cat2:hover {
+    transform: scale(1.05);
+}
+
+.discount-text {
+    
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.Feature {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(16, 4, 4, 0.1);
+    justify-content: space-between;
+    transition: 0.3s;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    cursor: pointer;
+     padding:20px;
+
+
+
+}
+.Feature.fe-box {
+    width: 180px;
+    text-align: center;
+    padding:25px 15px; 
+  
+}
+.Feature .fe-box :hover {
+    transform: translateY(-8px);
+     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+/* DESCRIPTION */
+.desc {
+    margin: 15px 0;
+    color: #555;
+}
+
+/* QTY */
+.qty-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.qty-box button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.qty {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* BUTTON */
+.cart-btn {
+    background: #008220;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background: #35ab12;
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar,
+    .home-desc,
+    .Feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+}
+    </style>
+
+
+<body>
+<section>
+  
+    <div class="navbar">
+        <a href="index.html">UrbanSprout𖠿</a>
+
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+            
+        </div>
+    </div>
+</section>
+    <!--Home section -->
+
+
+ <section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <p class="tagline">
+      Grow fresh, green living in every urban space
+    </p>
+
+    <h1>URBAN SPROUT</h1>
+
+   <a href="products.html" class="shop-btn">
+  Shop Products
+</a>
+  </div>
+</section>
+   
+
+
+
+   <div class="home-desc">
+                      
+    <div class="text">
+        <b><h2 style="text-align: center; ">Welcome to Urban Sprout</h2></b> 
+        <p>
+            Urban Sprout is the place where you will find plants to grow fresh and healthy directly in your home. 
+            You can have a garden with us no matter where you are, either in an apartment or with limited outdoor area, we make it easy, readable, and pleasant to all.
+            We offer the best seeds and equipment to help you create your own green space.
+            Our products are chosen for both beginners and experienced gardeners.
+            Growing your own food is not only cost-effective but also promotes a healthy lifestyle.
+        </p>
+    </div>
+   
+    
+
+    <div class="image" style="width:300px; height:300px; ">
+        <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:200,cw:1600,ch:1600,q:80,w:1600/3wEwSg7UnEdhBMob4gwiW.jpg " alt="Garden" >
+    </div>
+
+</div>
+
+
+</div>
+ <b><h2 style="text-align: center; padding: 20px; font-size:xx-large; color: #2e7d32; "> Our Features </h2></b>
+<section class="Feature">
+  
+<div class="fe-box">
+    <img src="https://plus.unsplash.com/premium_photo-1681487855134-d6c0434f91f8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMHNoaXBwaW5nfGVufDB8fDB8fHww" width="200px", height="200px">
+<h2 style=" font:italic; font-size: medium;">Free Shipping </h2>
+</div>
+<div class="fe-box">
+    <img src="https://plus.unsplash.com/premium_photo-1661774910035-05257f7d73a6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwb3JkZXJpbmd8ZW58MHx8MHx8fDA%3D" width="200px", height="200px">
+<h2 style=" font:italic; font-size: medium;">Online Order</h2>
+</div>
+<div class="fe-box">
+    <img src="https://www.thebalancemoney.com/thmb/l0KQr3CBNz85XPg3YXxRF2UIaiw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cropped-image-of-hand-putting-coins-in-jars-with-plants-755740897-5ab88ee1875db9003759d390.jpg" width="200px", height="200px">
+<h2 style=" font:italic; font-size: medium;">Save Money </h2>
+</div>
+<div class="fe-box">
+    <img src="https://img.freepik.com/premium-vector/24-hour-service-iconheadphone-talk-support-phone-consult-customer-problems_68708-3348.jpg" width="200px", height="200px">
+<h2 style=" font:italic; font-size: medium;">Support </h2>
+</div>
+<div class="fe-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2I5Ea0MEPwFhl4nni3bDFMl84JIsGgWv7w&s" width="200px", height="200px">
+<h2 style=" font:italic; font-size: medium;">Fast Delievery  </h2>
+</div>
+    </section>
+    <h2 style=" margin-top:40px; font-size:28px; color: #158515; text-align: center; ">
+             Our trending  Products
+    </h2>
+
+    <div class="container">
+
+       <div class="card">
+
+    <!-- Clickable area -->
+    <a href="products/spinach.html">
+        <img src="https://www.marthastewart.com/thmb/IIKmHtKZw40-yySrljvQP-WF7Pw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1154983188-5bf74d10df794a3aae277cf0a1648650.jpg">
+
+        <h4>Spinach Seeds</h4>
+    </a>
+        <p class="desc">
+            Nutritious leafy vegetable rich in iron. Perfect for healthy home gardening.
+        </p>
+
+        <div class="price">Rs.250</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.225</div>
+
+
+    <!-- Quantity -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- Add to Cart -->
+    <button onclick="addToCart(
+        'Spinach Seeds',
+        225,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/strawberry.html">
+
+        <img src="https://www.theenglishgarden.co.uk/_gatsby/file/64e0c2fd61c345563c17119cf7fcd7c2/22840_shutterstock_56673922.jpg">
+
+        <h4>Strawberry Seeds</h4>
+
+        <p class="desc">
+            Sweet and juicy fruit perfect for home gardens and small spaces.
+        </p>
+
+        <div class="price">Rs.200</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.180</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Strawberry Seeds',
+        180,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+       <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/minigreenhouse.html">
+
+        <img src="https://monstershop.co.uk/cdn/shop/files/27057_mini_greenhouse_plastic_cover_001_3cf6e7ac-bef9-47ac-8ea3-3d9377ba392c.jpg?v=1742506305&width=1517" alt="Mini Greenhouse">
+
+        <h4>Mini Greenhouse</h4>
+
+        <p class="desc">
+            Compact greenhouse ideal for protecting plants and growing seedlings in all seasons.
+        </p>
+
+        <div class="price">Rs.4000</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.3600</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Mini Greenhouse',
+        3600,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <!-- Water Spray -->
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/waterspray.html">
+
+        <img src="https://i5.walmartimages.com/asr/da1946c5-c326-44f7-b8c6-7dcefead4dfb.74438da12077b200bbbc56bd5d0369af.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF" alt="Water Spray">
+
+        <h4>Water Spray</h4>
+
+        <p class="desc">
+            Handy gardening spray bottle perfect for watering plants and maintaining moisture.
+        </p>
+
+        <div class="price">Rs.450</div>
+        <div class="discount-text">0% OFF</div>
+        <div class="discounted">Rs.450</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Water Spray',
+        450,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    </div> 
+    <!--  FOOTER ) -->
+    <div class="footer">
+        <h3>Urban Sprout </h3>
+        <p>Grow fresh, green living in every urban space</p>
+        <p>© 2026 Urban Sprout | All Rights Reserved</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</head>
+</body>
+</html>

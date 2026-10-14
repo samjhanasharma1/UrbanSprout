@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arugula - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../products.html?category=seeds" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- LEFT IMAGE -->
+        <div class="product-img">
+            <img src="https://keengarden.com/wp-content/uploads/2026/02/When-to-Harvest-Arugula.webp" alt="Arugula seeds">
+        </div>
+
+        <!-- RIGHT DETAILS -->
+        <div class="product-details">
+
+            <h2>Arugula Seeds</h2>
+
+            <div class="rating">★★★★★ (95)</div>
+
+            <div>
+                <span class="price">Rs.252</span>
+                <span class="old-price">Rs.280</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Arugula is a fast-growing leafy green vegetable known for its peppery taste. 
+               
+            </p>
+
+            <p class="desc">
+                These seeds are ideal for urban gardening and grow well in pots, balcony gardens, 
+                and small spaces with minimal care.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Prefers cool weather
+                <br>• Needs regular watering
+              
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Arugula Seeds',
+                252,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

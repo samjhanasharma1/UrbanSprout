@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrot - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+       
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+   <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://i.pinimg.com/236x/37/6a/8b/376a8bdd879c74e7510e376db592884b.jpg" alt="Carrot seeds">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Carrot Seeds</h2>
+
+            <div class="rating">★★★★★ (88)</div>
+
+            <div>
+                <span class="price">Rs.171</span>
+                <span class="old-price">Rs.190</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Carrots are a nutritious root vegetable rich in vitamins and antioxidants.
+                They are easy to grow and perfect for home gardens.
+            </p>
+
+            <p class="desc">
+                These seeds grow best in loose soil and cool weather, producing sweet and crunchy carrots.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Needs deep, loose soil
+                <br>• Keep soil moist
+                <br>• Harvest in 8–10 weeks
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Carrot Seeds',
+                171,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

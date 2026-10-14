@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lettuce - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+        
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+   <a href="../seeds.html" class="back-btn">← Back</a>
+<div class="product-box">
+
+    <!-- LEFT -->
+    <div class="product-img">
+        <img src="https://cdn.mos.cms.futurecdn.net/U7sU9gYWyGrznD3V6m6A66-1024-80.jpg.webp">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="product-details">
+
+        <h2>Lettuce</h2>
+
+        <div class="rating">★★★★★ (85)</div>
+
+        <div>
+            <span class="price">Rs.198</span>
+            <span class="old-price">Rs.220</span>
+            <span class="discount">10% OFF</span>
+        </div>
+
+        <!-- LONG DESCRIPTION -->
+        <p class="desc">
+            Lettuce is a fast-growing leafy vegetable that is perfect for salads, sandwiches, 
+            and healthy meals. It grows well in containers and small spaces, making it ideal 
+            for balcony gardening and urban homes.
+        </p>
+
+        <p class="desc">
+            These seeds are easy to grow and require minimal maintenance. Lettuce prefers 
+            cool temperatures and can be harvested in just a few weeks, allowing you to enjoy 
+            fresh, organic greens straight from your home garden.
+        </p>
+
+        <p class="desc">
+             Growing Tips:
+            <br>• Needs partial sunlight (3–5 hours daily)
+            <br>• Water regularly but avoid overwatering
+            <br>• Harvest leaves early for best taste
+        </p>
+
+        <!-- QUANTITY -->
+        <div class="qty-box">
+            <button onclick="decreaseQty(this)">-</button>
+            <span class="qty">1</span>
+            <button onclick="increaseQty(this)">+</button>
+        </div>
+
+        <!-- ADD TO CART -->
+        <button class="cart-btn" onclick="addToCart(
+            'Lettuce',
+            198,
+            document.querySelector('.product-img img').src,
+            document.querySelector('.qty').innerText
+        )">
+            ADD TO CART
+        </button>
+
+    </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>

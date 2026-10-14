@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gardening Gloves - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../products.html?category=tools" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://d4c5gb8slvq7w.cloudfront.net/eyJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjkwMH19LCJidWNrZXQiOiJmaW5lZ2FyZGVuaW5nLnMzLnRhdW50b25jbG91ZC5jb20iLCJrZXkiOiJhcHBcL3VwbG9hZHNcLzIwMjRcLzA3XC8xNzExNTk1OVwvRkcyMTlHUy1taWR3ZXN0LW1heC1ncmlwX2N0c3ktamFzb24tcmVldmVzLTEtMi03MDB4OTMzLmpwZyJ9">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Gardening Gloves</h2>
+
+            <div class="rating">★★★★★ (115)</div>
+
+            <div>
+                <span class="price">Rs.540</span>
+                <span class="old-price">Rs.600</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Gardening gloves protect your hands while planting, digging, pruning, and handling soil.
+            </p>
+
+            <p class="desc">
+                These gloves are comfortable, durable, and designed for both indoor and outdoor gardening tasks.
+            </p>
+
+            <p class="desc">
+                Features:
+                <br>• Comfortable grip and fit
+                <br>• Protects hands from dirt and scratches
+                <br>• Ideal for all gardening activities
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Gardening Gloves',
+                540,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Spray - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../tools.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://i5.walmartimages.com/asr/da1946c5-c326-44f7-b8c6-7dcefead4dfb.74438da12077b200bbbc56bd5d0369af.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Water Spray</h2>
+
+            <div class="rating">★★★★★ (64)</div>
+
+            <div>
+                <span class="price">Rs.450</span>
+                <span class="old-price">Rs.450</span>
+                <span class="discount">0% OFF</span>
+            </div>
+
+            <p class="desc">
+                Water Spray is a useful gardening tool designed for watering plants slowly and helps watering eqaully to all plants.
+            </p>
+
+            <p class="desc">
+                It is perfect for indoor and outdoor plants and helps maintain proper moisture without damaging leaves.
+            </p>
+
+            <p class="desc">
+                Usage Tips:
+                <br>• Spray plants lightly in the morning
+                <br>• Clean nozzle regularly
+                
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Water Spray',
+                450,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

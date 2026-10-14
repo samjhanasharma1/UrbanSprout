@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiwi - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+    
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://media.istockphoto.com/id/636969172/photo/kiwi-fruit.jpg?s=612x612&w=0&k=20&c=BKuMYHPuRBaIc6c4azgj-NqC2Is3Q0Vir-afZfxefXk=">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Kiwi Seeds</h2>
+
+            <div class="rating">★★★★★ (96)</div>
+
+            <div>
+                <span class="price">Rs.234</span>
+                <span class="old-price">Rs.260</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Kiwi is a nutritious fruit packed with vitamins, antioxidants, and refreshing flavor.
+            </p>
+
+            <p class="desc">
+                These seeds can grow into climbing kiwi plants suitable for gardens with enough sunlight and support.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Needs sunlight and support structure
+                <br>• Keep soil moist
+                <br>• Requires patience for fruit growth
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Kiwi Seeds',
+                234,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

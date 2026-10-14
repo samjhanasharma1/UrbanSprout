@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+   
+   
+   
+   
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+     color:black;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f6;
+    margin: 0;
+}
+
+
+
+
+/* BOX */
+
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* important */
+}
+
+.image-box {
+    flex: 1;
+   
+    min-width: 300px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.content-box {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
+}
+
+/* LIST */
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+/* LINKS */
+a {
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkedtime {
+    font-size: larger;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #1b5e20;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+}
+/* FOOTER */
+.footer {
+     background: #1B5E20;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+        <a href="index.html">UrbanSprout𖠿</a>
+
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+            
+        </div>
+    </div>
+
+<div style="background:linear-gradient(135deg, #1b5e20, #66bb6a); padding:36px 20px; text-align:center;">
+    <h2 style="font-size:32px; color:white; margin-bottom:8px;">Research</h2>
+    <p style="color:#e8f5e9; font-size:14px;">Website comparisons &amp; design references for UrbanSprout</p>
+</div>
+
+<!-- HOME PAGE -->
+<div class="content-box">
+    <ul><b><li> Home Page</li></b></ul>
+    <div class="image-row">
+        <div class="image-box"><h3>AeroGarden Website</h3><img src="Research/Aerogardenhomepage.jpg.png"></div>
+        <div class="image-box"><h3>Urban Sprout Website</h3><img src="Research/Urbansprouthomepage.jpg.png"></div>
+    </div>
+    <p>The home page hero section was inspired by the design and layout of <b>AeroGarden</b>.</p>
+    <p>Reference Website:<br><a href="https://scottsmiraclegro.com/en-us/aerogarden.html" target="_blank">https://scottsmiraclegro.com/en-us/aerogarden.html</a></p>
+    <p class="checkedtime"> Checked on:April 28th, 8:00AM</p>
+    <h3>Website Comparison</h3>
+    <table>
+        <tr><th>Feature</th><th>Similarities</th><th>Differences</th><th>Improvements</th></tr>
+        <tr><td>Hero Banner</td><td>Both use a full-width image with text overlay</td><td>AeroGarden uses a dark overlay with promotion text</td><td>Cleaner text layout with brand tagline</td></tr>
+        <tr><td>Call to Action</td><td>Both have a prominent CTA button</td><td>AeroGarden uses a dark pill-shaped button</td><td>Green button matches brand color</td></tr>
+        <tr><td>Typography</td><td>Both use large bold white text on the hero</td><td>AeroGarden uses a single large headline</td><td>Tagline + brand name for better hierarchy</td></tr>
+        <tr><td>Imagery</td><td>Both use garden/plant photography</td><td>AeroGarden uses indoor plant close-up</td><td>Outdoor garden image for a natural feel</td></tr>
+        <tr><td>Branding</td><td>Both prominently display the brand name</td><td>AeroGarden focuses on a seasonal promotion</td><td>Brand name as hero title for recognition</td></tr>
+    </table>
+</div>
+
+<!-- PRODUCTS PAGE - CATEGORIES -->
+<div class="content-box">
+    <ul><b><li>Products Page - Categories Section</li></b></ul>
+    <div class="image-row">
+        <div class="image-box"><h3>AeroGarden Website</h3><img src="Research/Aerogardenproductpage.jpg.png" ></div>
+        <div class="image-box"><h3>Urban Sprout Website</h3><img src="Research/Urbansproutproductpage.jpg.png"></div>
+    </div>
+    <p>The category section was inspired by the design and layout of <b>AeroGarden</b>.</p>
+    <p>Reference Website:<br><a href="https://scottsmiraclegro.com/en-us/aerogarden.html" target="_blank">https://scottsmiraclegro.com/en-us/aerogarden.html</a></p>
+    <p class="checkedtime"> Checked on:April 28th, 8:00AM</p>
+    <h3>Website Comparison</h3>
+    <table>
+        <tr><th>Feature</th><th>Similarities</th><th>Differences</th><th>Improvements</th></tr>
+        <tr><td>Layout</td><td>Both display categories with images</td><td>AeroGarden uses 3 large overlapping panels</td><td>Cleaner two-column layout</td></tr>
+        <tr><td>Category Labels</td><td>Both show category names over images</td><td>AeroGarden uses large bold white text</td><td>Subtle label, easy to read</td></tr>
+        <tr><td>Number of Categories</td><td>Both highlight main product groups</td><td>AeroGarden shows 3 categories</td><td>2 focused categories for clarity</td></tr>
+        <tr><td>Design Style</td><td>Both use full-width category images</td><td>AeroGarden has a premium editorial feel</td><td>Simple beginner-friendly design</td></tr>
+        <tr><td>User Experience</td><td>Both help users browse by category</td><td>AeroGarden links to a Shop All page</td><td>Direct and easy navigation</td></tr>
+    </table>
+</div>
+
+<!-- PRODUCT DETAIL PAGE -->
+<div class="content-box">
+    <ul><b><li>Product Detail Page</li></b></ul>
+    <div class="image-row">
+        <div class="image-box"><h3>Foreveryng Website</h3><img src="Research/Foreveryngdetail.jpg.png"></div>
+        <div class="image-box"><h3>Urban Sprout Website</h3><img src="Research/Urbansproutdetails.jpg.png"></div>
+    </div>
+    <p>The product detail page was inspired by the layout of <b>Foreveryng</b>.</p>
+    <p>Reference Website:<br><a href="https://www.foreveryng.com/" target="_blank">https://www.foreveryng.com/</a></p>
+    <p class="checkedtime"> Checked on: May 6th, 3:15PM</p>
+    <h3>Website Comparison</h3>
+    <table>
+        <tr><th>Feature</th><th>Similarities</th><th>Differences</th><th>Improvements</th></tr>
+        <tr><td>Product Image</td><td>Both display a large product image</td><td>Foreveryng shows multiple image thumbnails</td><td>Clean single image for clarity</td></tr>
+        <tr><td>Pricing</td><td>Both show original and discounted price</td><td>Foreveryng shows reward points and coupons</td><td>Simple and easy-to-read pricing</td></tr>
+        <tr><td>Add to Cart</td><td>Both have quantity control and cart button</td><td>Foreveryng has wishlist and loyalty coupons</td><td>Minimal and beginner-friendly cart</td></tr>
+        <tr><td>Design</td><td>Both use a two-column layout</td><td>Foreveryng has a beauty-focused pink theme</td><td>Cleaner and greener aesthetic</td></tr>
+    </table>
+</div>
+
+<!-- BLOG PAGE -->
+<div class="content-box">
+    <ul><b><li>Blog Page</li></b></ul>
+    <div class="image-row">
+        <div class="image-box"><h3>Epic Gardening Website</h3><img src="Research/Epicgardeningblog.jpg.jpeg"></div>
+        <div class="image-box"><h3>Urban Sprout Website</h3><img src="Research/Urbansproutblog.jpg.jpeg"></div>
+    </div>
+    <p>The blog page was inspired by the layout and design of <b>Epic Gardening</b>.</p>
+    <p>Reference Website:<br><a href="https://www.epicgardening.com/gardening/ornamental/" target="_blank">https://www.epicgardening.com/gardening/ornamental/</a></p>
+    <p class="checkedtime"> Checked on:May 8th, 4:10PM</p>
+    <h3>Website Comparison</h3>
+    <table>
+        <tr><th>Feature</th><th>Similarities</th><th>Differences</th><th>Improvements</th></tr>
+        <tr><td>Hero Section</td><td>Both have a prominent title and description at the top</td><td>Epic Gardening uses bold uppercase text and an image grid</td><td>Cleaner hero with subtle green background</td></tr>
+        <tr><td>Typography</td><td>Both use green as the primary heading color</td><td>Epic Gardening uses heavy uppercase font style</td><td>Softer, more readable font style</td></tr>
+        <tr><td>Images</td><td>Both display garden-related images</td><td>Epic Gardening uses a 3-column image grid</td><td>Hero image style for a welcoming feel</td></tr>
+        <tr><td>Content Focus</td><td>Both focus on gardening topics</td><td>Epic Gardening targets ornamental/flower gardens</td><td>Focused on urban and indoor gardening</td></tr>
+        <tr><td>Background</td><td>Both use a light neutral background</td><td>Epic Gardening uses a warm beige/cream tone</td><td>Fresh light green background fits the brand</td></tr>
+    </table>
+</div>
+
+<!-- ABOUT US PAGE -->
+<div class="content-box">
+    <ul><b><li>About Us Page</li></b></ul>
+    <div class="image-row">
+        <div class="image-box"><h3>Duolingo Website</h3><img src="Research/Duolingoabout.jpg.png"></div>
+        <div class="image-box"><h3>Urban Sprout Website</h3><img src="Research/Urbansproutabout.jpg.png"></div>
+    </div>
+    <p>The About Us page was inspired by the layout and structure of <b>Duolingo</b>.</p>
+    <p>Reference Website:<br><a href="https://about.duolingo.com/" target="_blank">https://about.duolingo.com/</a></p>
+    <p class="checkedtime"> Checked on: May 1st, 3:00PM</p>
+    <h3>Website Comparison</h3>
+    <table>
+        <tr><th>Feature</th><th>Similarities</th><th>Differences</th><th>Improvements</th></tr>
+        <tr><td>Mission Statement</td><td>Both clearly state the company mission at the top</td><td>Duolingo uses large bold centered text</td><td>Friendlier and more personal tone</td></tr>
+        <tr><td>Team Section</td><td>Both highlight the people behind the product</td><td>Duolingo shows product cards instead of team members</td><td>Shows real team photos with names</td></tr>
+        <tr><td>Layout</td><td>Both use a clean centered layout</td><td>Duolingo uses a white background with grey cards</td><td>Soft green background matches brand identity</td></tr>
+        <tr><td>Color Scheme</td><td>Both use green as the primary brand color</td><td>Duolingo uses bright lime green accents</td><td>Deeper forest green for a natural feel</td></tr>
+        <tr><td>Interactive Elements</td><td>Both include calls to action</td><td>Duolingo has Learn More links per product</td><td>Feedback form for direct user engagement</td></tr>
+    </table>
+</div>
+
+<div class="footer">
+    <h3>Urban Sprout</h3>
+    <p>Grow fresh, green living in every urban space</p>
+    <p>© 2026 Urban Sprout | All Rights Reserved</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grape Seeds - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+ <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://img.drz.lazcdn.com/static/bd/p/14f540332390500bbf847fad76e533d4.jpg_720x720q80.jpg">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Grape Seeds</h2>
+
+            <div class="rating">★★★★★ (98)</div>
+
+            <div>
+                <span class="price">Rs.198</span>
+                <span class="old-price">Rs.220</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Sweet fruit seeds perfect for home gardening and healthy snacks.
+            </p>
+
+            <p class="desc">
+                These seeds grow into healthy grape vines suitable for gardens, balconies, and small spaces.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Needs sunlight for proper growth
+                <br>• Water regularly but avoid overwatering
+                <br>• Provide support for climbing vines
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Grape Seeds',
+                198,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

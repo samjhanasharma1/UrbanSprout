@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cherry - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+        
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+   <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://m.media-amazon.com/images/I/81jNg4jYlHL.jpg" alt="Cherry seeds">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Cherry Seeds</h2>
+
+            <div class="rating">★★★★★ (110)</div>
+
+            <div>
+                <span class="price">Rs.270</span>
+                <span class="old-price">Rs.300</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Cherry seeds can grow into  sweet and juicy cherries.
+            </p>
+
+            <p class="desc">
+                These seeds are suitable for home gardening  and require patience and proper care for healthy growth.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Water regularly
+                <br>• Requires cool climate for best growth
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Cherry Seeds',
+                270,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

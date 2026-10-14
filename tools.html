@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>seeds.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<div class="navbar">
+        <a href="index.html">UrbanSprout𖠿</a>
+
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+        </div>
+    </div>
+<!-- ================= TOOLS SECTION ================= -->
+<div id="toolsSection" class="section">
+   <button class="back-btn" onclick="window.location.href='products.html'">
+    ← Back
+</button>
+ <h2 style="text-align:center;  background: #e8f5e9; padding:20px; color:green; " > Gardening tools </h2>
+    <h2  style="text-align:center; padding:5px; margin-top: 0;">Home Gardening</h2>
+    
+
+
+    <div class="container">
+        
+       <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/diggingfork.html">
+
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/071/955/641/small/small-garden-fork-stuck-in-soil-used-for-planting-and-gardening-photo.jpg" alt="Digging Fork">
+
+        <h4>Digging Fork</h4>
+
+        <p class="desc">
+            Strong gardening tool perfect for digging, loosening soil, and compost work.
+        </p>
+
+        <div class="price">Rs.950</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.855</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Digging Fork',
+        855,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/pruningshears.html">
+
+        <img src="https://plastrip.co.za/cdn/shop/files/WEBDSC_6444editDura5PruningShearjpeg_600x.jpg?v=1701413406" alt="Pruning Shears">
+
+        <h4>Pruning Shears</h4>
+
+        <p class="desc">
+            Sharp gardening tool ideal for trimming plants, flowers, and small branches easily.
+        </p>
+
+        <div class="price">Rs.1500</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.1350</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Pruning Shears',
+        1350,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/minishovel.html">
+
+        <img src="https://m.media-amazon.com/images/I/51Ls59IUj2L.jpg" alt="Mini Hand Shovel">
+
+        <h4>Mini Hand Shovel</h4>
+
+        <p class="desc">
+            Compact gardening tool perfect for digging, planting, and pot gardening.
+        </p>
+
+        <div class="price">Rs.570</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.513</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Mini Hand Shovel',
+        513,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/gardeninggloves.html">
+
+        <img src="https://d4c5gb8slvq7w.cloudfront.net/eyJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjkwMH19LCJidWNrZXQiOiJmaW5lZ2FyZGVuaW5nLnMzLnRhdW50b25jbG91ZC5jb20iLCJrZXkiOiJhcHBcL3VwbG9hZHNcLzIwMjRcLzA3XC8xNzExNTk1OVwvRkcyMTlHUy1taWR3ZXN0LW1heC1ncmlwX2N0c3ktamFzb24tcmVldmVzLTEtMi03MDB4OTMzLmpwZyJ9" alt="Gardening Gloves">
+
+        <h4>Gardening Gloves</h4>
+
+        <p class="desc">
+            Protective gardening gloves perfect for safe and comfortable gardening work.
+        </p>
+
+        <div class="price">Rs.600</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.540</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Gardening Gloves',
+        540,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    </div>
+
+    <!--  Outdoor Gardening -->
+    <h2  style="text-align:center; padding:5px; margin-top: 0;">Outdoor Gardening</h2>
+    <div class="container">
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/terracottapots.html">
+
+        <img src="https://m.media-amazon.com/images/I/61a-9qjva-L._AC_SX679_.jpg" alt="Terra Cotta Pots">
+
+        <h4>Terra Cotta Pots</h4>
+
+        <p class="desc">
+            Stylish clay pots perfect for indoor and outdoor gardening decoration.
+        </p>
+
+        <div class="price">Rs.1650</div>
+        <div class="discount-text">15% OFF</div>
+        <div class="discounted">Rs.1402.5</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Terra Cotta Pots',
+        1402.5,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/balconypots.html">
+
+        <img src="https://www.hetbalkonbankje.nl/wp-content/uploads/2024/02/Kleine-staande-verticale-tuinset-voor-op-de-grond-of-op-tafel-768x768.webp" alt="Balcony Pots">
+
+        <h4>Balcony Pots</h4>
+
+        <p class="desc">
+            Modern balcony pots perfect for growing flowers, herbs, and vegetables in small spaces.
+        </p>
+
+        <div class="price">Rs.2000</div>
+        <div class="discount-text">15% OFF</div>
+        <div class="discounted">Rs.1700</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Balcony Pots',
+        1700,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <!-- PRODUCT CARD -->
+<div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/minigreenhouse.html">
+
+        <img src="https://monstershop.co.uk/cdn/shop/files/27057_mini_greenhouse_plastic_cover_001_3cf6e7ac-bef9-47ac-8ea3-3d9377ba392c.jpg?v=1742506305&width=1517" alt="Mini Greenhouse">
+
+        <h4>Mini Greenhouse</h4>
+
+        <p class="desc">
+            Compact greenhouse ideal for protecting plants and growing seedlings in all seasons.
+        </p>
+
+        <div class="price">Rs.4000</div>
+        <div class="discount-text">10% OFF</div>
+        <div class="discounted">Rs.3600</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Mini Greenhouse',
+        3600,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+        <!-- PRODUCT CARD -->
+<div class="card">
+
+    <!-- PRODUCT PAGE LINK -->
+    <a href="products/waterspray.html">
+
+        <img src="https://i5.walmartimages.com/asr/da1946c5-c326-44f7-b8c6-7dcefead4dfb.74438da12077b200bbbc56bd5d0369af.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF" alt="Water Spray">
+
+        <h4>Water Spray</h4>
+
+        <p class="desc">
+            Handy gardening spray bottle perfect for watering plants and maintaining moisture.
+        </p>
+
+        <div class="price">Rs.450</div>
+        <div class="discount-text">0% OFF</div>
+        <div class="discounted">Rs.450</div>
+
+    </a>
+
+    <!-- QUANTITY -->
+    <div class="qty-box">
+        <button onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button onclick="increaseQty(this)">+</button>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button onclick="addToCart(
+        'Water Spray',
+        450,
+        this.parentElement.querySelector('img').src,
+        this.parentElement.querySelector('.qty').innerText
+    )">
+        Add to Cart
+    </button>
+
+</div>
+
+    </div>
+</div>
+    
+</div>
+  
+
+    
+        <div class="footer" >
+        <h3>Urban Sprout </h3>
+        <p>Grow fresh, green living in every urban space</p>
+        <p>© 2026 Urban Sprout | All Rights Reserved</p>
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

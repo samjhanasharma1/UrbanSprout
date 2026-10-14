@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samjhana Sharma | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia;
+}
+
+body{
+    background:#eef2ff;
+    padding:30px;
+    color:#222;
+}
+
+/* MAIN CONTAINER */
+.portfolio{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+/* TOP SECTION */
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.top-text{
+    flex:1;
+    min-width:300px;
+}
+
+/* NAME */
+.top-text h1{
+    font-size:50px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.line{
+    width:250px;
+    height:4px;
+    background:#2563eb;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+/* INTRO TEXT */
+.top-text p{
+    font-size:17px;
+    line-height:1.9;
+    text-align:justify;
+    color:#333;
+}
+
+/* PHOTO */
+.photo{
+    flex:0.5;
+    display:flex;
+    justify-content:center;
+}
+
+.photo img{
+    width:260px;
+    height:320px;
+    object-fit:cover;
+    border-radius:25px;
+    border:6px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* SECTION TITLE */
+.section-title{
+    color:#2563eb;
+    font-size:32px;
+    margin-top:50px;
+}
+
+.small-line{
+    width:120px;
+    height:4px;
+    background:#2563eb;
+    border-radius:10px;
+    margin:12px 0 30px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#2563eb;
+    font-size:26px;
+    margin-bottom:18px;
+}
+
+.card ul{
+    padding-left:25px;
+}
+
+.card li{
+    margin-bottom:14px;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* GOAL */
+.goal{
+    margin-top:40px;
+    background:#eef2ff;
+    border-left:8px solid #2563eb;
+    padding:35px;
+    border-radius:20px;
+}
+
+.goal h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+.goal p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* CONTACT */
+.contact{
+    margin-top:40px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.contact-box{
+    font-size:17px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .top{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .line,
+    .small-line{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .top-text h1{
+        font-size:40px;
+    }
+
+    .section-title{
+        font-size:28px;
+        text-align:center;
+    }
+
+    .top-text p{
+        font-size:16px;
+    }
+
+    .photo img{
+        width:220px;
+        height:280px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="portfolio">
+
+    <!-- TOP -->
+    <div class="top">
+
+        <div class="top-text">
+
+            <h1>Samjhana Sharma</h1>
+
+            <div class="line"></div>
+
+            <p>
+                Hi! My name is <b>Samjhana Sharma</b>. I am a first-year BIT student at Informatics College Pokhara. I am a dedicated and ambitious person with a desire to learn and develop my skills. I enjoy engaging in different activities and collaborating with others to improve my learning. I want to continue growing in both my personal and academic life.
+            </p>
+
+        </div>
+
+        <!-- PHOTO -->
+        <div class="photo">
+            <img src="member1.jpg" alt="Samjhana Sharma">
+        </div>
+
+    </div>
+
+    <!-- PROFILE -->
+    <h2 class="section-title">Profile Details</h2>
+    <div class="small-line"></div>
+
+    <div class="cards">
+
+        <!-- EDUCATION -->
+        <div class="card">
+
+            <h3>Education</h3>
+
+            <ul>
+                <li> Current BIT — Informatics College Pokhara</li>
+                <li>+2 Science — Trinity International School</li>
+                <li>SEE — Namuna Secondary Boarding School</li>
+            </ul>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="card">
+
+            <h3>Skills</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>MS Office</li>
+                <li>CSS</li>
+                <li>Basic Computer Skills </li>
+
+                
+            </ul>
+
+        </div>
+
+        <!-- INTERESTS -->
+        <div class="card">
+
+            <h3>Interests</h3>
+
+            <ul>
+                <li>Reading Novels</li>
+                <li>Listening to Music</li>
+                <li>Writing Poems</li>
+                <li>Travelling</li>
+                <li>Learning new skills</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- GOAL -->
+    <div class="goal">
+
+        <h2>Future Goal</h2>
+
+        <p>
+            My future goal is to become a skilled IT professional, gain strong technical knowledge, build real-world projects, and contribute positively to society through technology.
+        </p>
+
+    </div>
+
+    <!-- CONTACT -->
+    <h2 class="section-title">Contact</h2>
+    <div class="small-line"></div>
+
+    <div class="contact">
+
+        <div class="contact-box">
+            Email : samjhanasharma898@gmail.com
+        </div>
+
+        <div class="contact-box">
+             Contact no : 9863891891
+        </div>
+
+        <div class="contact-box">
+           Address : Pokhara, Nepal
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

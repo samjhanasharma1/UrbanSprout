@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pruning Shears - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../tools.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://plastrip.co.za/cdn/shop/files/WEBDSC_6444editDura5PruningShearjpeg_600x.jpg?v=1701413406">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Pruning Shears</h2>
+
+            <div class="rating">★★★★★ (102)</div>
+
+            <div>
+                <span class="price">Rs.1350</span>
+                <span class="old-price">Rs.1500</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Pruning Shears are essential gardening tools used for trimming plants, flowers, and small branches neatly.
+            </p>
+
+            <p class="desc">
+                These shears are lightweight, easy to use, and perfect for maintaining healthy plants in home gardens.
+            </p>
+
+            <p class="desc">
+                Usage Tips:
+                <br>• Clean blades after use
+                <br>• Store in a dry place
+                <br>• Use carefully while trimming
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Pruning Shears',
+                1350,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

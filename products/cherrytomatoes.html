@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cherry Tomato Seeds - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+       
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+   <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://www.marthastewart.com/thmb/c5wsi-bb099p-y5oe-XNKlnRZwU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/MS_cherrytomatoplant_GettyImages-1264114943-9fbeb2f77ba34c25828d2bc588ef2b9b.jpg" alt="cherrytomatoes seeds">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Cherry Tomato Seeds</h2>
+
+            <div class="rating">★★★★★ (120)</div>
+
+            <div>
+                <span class="price">Rs.166.5</span>
+                <span class="old-price">Rs.185</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Cherry tomato seeds are perfect for balcony gardening and home farming.
+            </p>
+
+            <p class="desc">
+                These plants are easy to grow and produce sweet, juicy tomatoes with fast harvest times.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Place in full sunlight
+                <br>• Water regularly
+                <br>• Use well-drained soil
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Cherry Tomato Seeds',
+                166.5,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

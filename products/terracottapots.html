@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terra Cotta Pots - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../tools.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://m.media-amazon.com/images/I/61a-9qjva-L._AC_SX679_.jpg">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Terra Cotta Pots</h2>
+
+            <div class="rating">★★★★★ (132)</div>
+
+            <div>
+                <span class="price">Rs.1402.5</span>
+                <span class="old-price">Rs.1650</span>
+                <span class="discount">15% OFF</span>
+            </div>
+
+            <p class="desc">
+                Terra cotta pots are durable clay pots ideal for growing flowers, herbs, and decorative plants.
+            </p>
+
+            <p class="desc">
+                Their breathable material helps maintain healthy soil moisture and supports plant growth naturally.
+            </p>
+
+            <p class="desc">
+                Features:
+                <br>• Strong material 
+                <br>• Suitable for indoor and outdoor use
+                <br>• Perfect for home ,outdoor and balcony gardens
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Terra Cotta Pots',
+                1402.5,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spinach - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+  <a href="../seeds.html" class="back-btn">← Back</a>
+<div class="product-box">
+
+    <!-- LEFT IMAGE -->
+    <div class="product-img">
+        <img src="https://www.marthastewart.com/thmb/IIKmHtKZw40-yySrljvQP-WF7Pw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1154983188-5bf74d10df794a3aae277cf0a1648650.jpg">
+    </div>
+
+    <!-- RIGHT DETAILS -->
+    <div class="product-details">
+
+        <h2>Spinach Seeds</h2>
+
+        <div class="rating">★★★★★ (110)</div>
+
+        <div>
+            <span class="price">Rs.225</span>
+            <span class="old-price">Rs.250</span>
+            <span class="discount">10% OFF</span>
+        </div>
+
+        <!-- LONG DESCRIPTION -->
+        <p class="desc">
+            Spinach is a highly nutritious leafy vegetable have protein vitamins which is very beneficial for health.
+        </p>
+
+        <p class="desc">
+            These spinach seeds are easy to grow and thrive well in containers, 
+            making them ideal for balcony and urban gardening. With proper care.
+        </p>
+
+        <p class="desc">
+             Growing Tips:
+            <br>• Requires cool weather and partial sunlight
+            <br>• Ready to harvest in 4–6 weeks
+        </p>
+
+        <!-- QUANTITY -->
+        <div class="qty-box">
+            <button onclick="decreaseQty(this)">-</button>
+            <span class="qty">1</span>
+            <button onclick="increaseQty(this)">+</button>
+        </div>
+
+        <!-- ADD TO CART -->
+        <button class="cart-btn" onclick="addToCart(
+            'Spinach Seeds',
+            225,
+            document.querySelector('.product-img img').src,
+            document.querySelector('.qty').innerText
+        )">
+            ADD TO CART
+        </button>
+
+    </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="../index.html">UrbanSprout𖠿</a>
+
+    <div class="nav-links">
+        <a href="../products.html">Products</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../about.html">About Us</a>
+        <a href="../research.html">Research</a>
+       
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://gardenerspath.com/wp-content/uploads/2024/05/Apples-Spilling-from-a-Wicker-Basket.jpg" alt="apple seeds">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Apple Seeds</h2>
+
+            <div class="rating">★★★★★ (102)</div>
+
+            <div>
+                <span class="price">Rs.216</span>
+                <span class="old-price">Rs.240</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Apple seeds can grow into beautiful fruit-bearing trees that produce nutritious and tasty apples.
+            </p>
+
+            <p class="desc">
+                They are suitable for home gardening with proper care and long-term growth planning.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Grow in sunlight.
+                <br>• Requires more time for growth.
+                <br>• Daily watering is necessary.
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Apple Seeds',
+                216,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

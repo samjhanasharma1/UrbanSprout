@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mango - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+       
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://i.pinimg.com/236x/dc/d6/9a/dcd69a5cbf823702b8fe4ce7d9206b45.jpg">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Mango Seeds</h2>
+
+            <div class="rating">★★★★★ (125)</div>
+
+            <div>
+                <span class="price">Rs.288</span>
+                <span class="old-price">Rs.320</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Mango is a delicious tropical fruit loved for its sweet flavor and rich nutrients.
+            </p>
+
+            <p class="desc">
+                These seeds can grow into healthy mango trees suitable for gardens and outdoor spaces.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Needs warm climate and sunlight
+                <br>• Water regularly during growth
+                <br>• Requires patience for fruit production
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Mango Seeds',
+                288,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products - UrbanSprout</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+     color:black;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* CATEGORY GRID */
+#categoryTitle {
+    font-size: 35px;
+    margin: 30px 40px;
+}
+
+#categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.category-card {
+    position: relative;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+}
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* PRODUCT SECTION */
+.section {
+    display: none;
+    padding: 20px 40px;
+}
+
+/* CARDS */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 5px auto; 
+    padding: 22px;
+    background-color: #d1c8c8;
+
+}
+
+.card {
+    background:white;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(16, 4, 4, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+    width: 250px;
+    min-height: 450px;
+
+}
+ .card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+  
+}
+.card:hover {
+    transform: translateY(-8px);
+     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.card button {
+    background: #1b5e20;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 14px;
+    text-align: center;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.discounted {
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* html tag selector */
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #1B5E20;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(3, 52, 3);
+}
+/* ALL 3 CARDS (grouping IDs) */
+#cat1, #cat2, #cat3 {
+    position: relative;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* IMAGES */
+#cat1 img, #cat2 img, #cat3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DARK OVERLAY */
+#cat1::after, #cat2::after, #cat3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* TEXT */
+#cat1 h3, #cat2 h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    
+}
+
+/* HOVER */
+#cat1:hover, #cat2:hover {
+    transform: scale(1.05);
+}
+
+.discount-text {
+    
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #1B5E20;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f3d12;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.desc {
+     font-size: 13px;
+    color: gray;
+    margin: 5px 0 10px;
+}
+
+.qty-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.qty-box button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #1b5e20;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qty {
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+/* CATEGORY INFO SECTION */
+.category-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #f1f8e9, #ffffff);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-left: 6px solid #1B5E20;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.info-box h2 {
+    color: #1B5E20;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.info-box p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+/* FOOTER */
+.footer {
+     background: #1B5E20;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+        <a href="index.html">UrbanSprout𖠿</a>
+
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+        </div>
+    </div>
+    <section id="homeSection">
+        <h2 style="text-align: center; margin-bottom: 30px;">
+    SHOP BY CATEGORY
+</h2>
+<div id="categoryGrid">
+
+    <a href="seeds.html" class="category-card">
+        <img src="https://cdn.mos.cms.futurecdn.net/WKyXdvGnjyfabrEfQtg4gD.jpg">
+        <h3>Seeds</h3>
+    </a>
+
+    <a href="tools.html" class="category-card">
+        <img src="https://media.istockphoto.com/id/534362613/photo/gardening.jpg">
+        <h3>Gardening Tools</h3>
+    </a>
+
+</div>
+    
+   
+
+    
+
+</section>
+
+
+  
+<div class="category-info">
+    <div class="info-box">
+        <h2>Seeds Collection</h2>
+
+        <p>
+          UrbanSprout has good seeds that are good, for the earth and help people grow their own food at home.
+           If you want to start gardening our seeds are a place to begin. 
+           They are easy to put in the ground and grow fast. You can use them in your house or outside whichever you like.
+        </p>
+
+        <p>
+            We have a lot of vegetable and fruit seeds for you to try. 
+            These seeds are perfect for people who like to garden in the city. 
+            You can use them to grow tomatoes on your balcony or leafy greens in pots.
+             You can even grow fruits in your own garden at home. Our seeds are easy to take care of and great for people who are just starting out. 
+             They will help you harvest healthy food without using any bad chemicals.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>Gardening Tools</h2>
+
+        <p>
+            Gardening is a lot of fun when you have the stuff. 
+            Our gardening tools collection makes gardening easier and more fun. 
+            We have all the tools like digging forks and hand shovels.
+             You will also find pots and gloves and things to help you water your plants.
+        </p>
+
+        <p>
+            All of our gardening tools are made to help you take care of your plants in a way. 
+            Our gardening tools are great for people who are just starting to garden and for people who have been gardening for a time. 
+            Gardening tools help with putting plants in the ground and giving them water and getting the soil ready. 
+            They also help with keeping your plants healthy. Our gardening tools make gardening, in the city more organized. 
+            You can get more done.
+        </p>
+    </div>
+</div>
+
+ 
+        <div class="footer" >
+        <h3>Urban Sprout </h3>
+        <p>Grow fresh, green living in every urban space</p>
+        <p>© 2026 Urban Sprout | All Rights Reserved</p>
+</div>
+
+
+
+</body>
+</html>

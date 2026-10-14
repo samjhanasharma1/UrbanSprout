@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balcony Pots - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../tools.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://www.hetbalkonbankje.nl/wp-content/uploads/2024/02/Kleine-staande-verticale-tuinset-voor-op-de-grond-of-op-tafel-768x768.webp" alt="Balcony pots">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Balcony Pots</h2>
+
+            <div class="rating">★★★★★ (126)</div>
+
+            <div>
+                <span class="price">Rs.1700</span>
+                <span class="old-price">Rs.2000</span>
+                <span class="discount">15% OFF</span>
+            </div>
+
+            <p class="desc">
+                Balcony pots are stylish containers designed for growing plants in limited urban spaces.
+            </p>
+
+            <p class="desc">
+                They are perfect for flowers, herbs, and vegetables, making balcony gardening simple and attractive.
+            </p>
+
+            <p class="desc">
+                Features:
+                <br>• Space-saving design
+                <br>• Suitable for indoor and outdoor use
+                <br>• Ideal for balcony and apartment gardening
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Balcony Pots',
+                1700,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

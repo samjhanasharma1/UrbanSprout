@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Papaya - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://media.istockphoto.com/id/483485722/photo/papaya-tree-with-a-large-crop-of-papayas.jpg?s=612x612&w=0&k=20&c=IEl8h40CDDih-0B99KP40VBxsg9aOCtnq_-IQoLIj4Y=">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Papaya Seeds</h2>
+
+            <div class="rating">★★★★★ (108)</div>
+
+            <div>
+                <span class="price">Rs.189</span>
+                <span class="old-price">Rs.210</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Papaya is a tropical fruit rich in vitamins, fiber, and antioxidants, perfect for a healthy diet.
+            </p>
+
+            <p class="desc">
+                These seeds grow quickly and can develop into productive papaya trees in warm climates.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Water regularly
+                <br>• Best planted in well-drained soil
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Papaya Seeds',
+                189,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

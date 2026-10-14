@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cabbage - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout</a>
+
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="research.html">Research</a>
+        
+    </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+   <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- IMAGE -->
+        <div class="product-img">
+            <img src="https://www.groworganic.com/cdn/shop/articles/Cabbage3.png?v=1766094359" alt="Cabbage seeds">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h2>Cabbage Seeds</h2>
+
+            <div class="rating">★★★★★ (92)</div>
+
+            <div>
+                <span class="price">Rs.189</span>
+                <span class="old-price">Rs.210</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Cabbage is a nutritious leafy vegetable widely used in soups, curries, and salads.
+                It is easy to grow and highly productive in home gardens.
+            </p>
+
+            <p class="desc">
+                These seeds grow into firm, round heads that are rich in vitamins and fiber,
+                making them perfect for a healthy diet.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Grows best in cool weather
+                <br>• Needs regular watering
+                <br>• Harvest in 10–12 weeks
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Cabbage Seeds',
+                189,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

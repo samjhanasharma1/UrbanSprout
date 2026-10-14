@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radish - UrbanSprout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">UrbanSprout𖠿</a>
+
+  
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="blog.html">Blog</a>
+    <a href="about.html">About Us</a>
+    </div>
+</div>
+<!-- PRODUCT -->
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="../seeds.html" class="back-btn">← Back</a>
+
+    <div class="product-box">
+
+        <!-- LEFT IMAGE -->
+        <div class="product-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScSziLJxArBt5h5F30Y8BxfEWn_UFn3tpqwA&s">
+        </div>
+
+        <!-- RIGHT DETAILS -->
+        <div class="product-details">
+
+            <h2>Radish Seeds</h2>
+
+            <div class="rating">★★★★★ (96)</div>
+
+            <div>
+                <span class="price">Rs.153</span>
+                <span class="old-price">Rs.170</span>
+                <span class="discount">10% OFF</span>
+            </div>
+
+            <p class="desc">
+                Radish is a fast-growing root vegetable which is perfect for salads.
+            </p>
+
+            <p class="desc">
+                These seeds are easy to grow and ideal for home gardens, pots, balconies, 
+                and small gardening spaces.
+            </p>
+
+            <p class="desc">
+                Growing Tips:
+                <br>• Requires regular watering
+                <br>• Grows best in loose soil
+            </p>
+
+            <!-- QUANTITY -->
+            <div class="qty-box">
+                <button onclick="decreaseQty(this)">-</button>
+                <span class="qty">1</span>
+                <button onclick="increaseQty(this)">+</button>
+            </div>
+
+            <!-- ADD TO CART -->
+            <button class="cart-btn" onclick="addToCart(
+                'Radish Seeds',
+                153,
+                document.querySelector('.product-img img').src,
+                document.querySelector('.qty').innerText
+            )">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
